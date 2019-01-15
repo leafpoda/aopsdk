@@ -1,0 +1,15 @@
+{
+    "name": "leafpoda/aopsdk",
+    "description": "支付宝SDK文件",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "sholva",
+            "email": "sholva@qq.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "files": ["src/AopSdk.php"]
+    }
+}

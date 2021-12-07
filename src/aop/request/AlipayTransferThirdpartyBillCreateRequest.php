@@ -33,7 +33,7 @@ class AlipayTransferThirdpartyBillCreateRequest
 	private $partnerId;
 	
 	/** 
-	 * 外部系统收款方UID，付款人和收款人不能是同一个帐户
+	 * 外部系统收款方UID，付款人和收款人不能是同一个账户
 	 **/
 	private $payeeAccount;
 	
@@ -49,10 +49,10 @@ class AlipayTransferThirdpartyBillCreateRequest
 	private $payerAccount;
 	
 	/** 
-	 * 1-支付宝帐户
-2-淘宝帐户
-10001-新浪微博帐户
-10002-阿里云帐户
+	 * 1-支付宝账户
+2-淘宝账户
+10001-新浪微博账户
+10002-阿里云账户
 （1、2目前对外不可见、不可用）
 	 **/
 	private $payerType;

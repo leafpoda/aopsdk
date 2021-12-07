@@ -45,7 +45,12 @@ class LtStoreFile implements LtStore
 		{
 			$value = serialize($value);
 		}
-		$length = file_put_contents($file, '<?php exit;?>' . $value);
+		try {
+			$length = file_put_contents($file, '<?php exit;?>' . $value);
+		} catch (Exception $e) {
+			$length = 0;
+		}
+		
 		return $length > 0 ? true : false;
 	}
 
@@ -108,7 +113,13 @@ class LtStoreFile implements LtStore
 			{
 				$value = serialize($value);
 			}
-			$length = file_put_contents($file, '<?php exit;?>' . $value);
+			
+			try {
+				$length = file_put_contents($file, '<?php exit;?>' . $value);
+			} catch (Exception $e) {
+				$length = 0;	
+			}
+			
 			return $length > 0 ? true : false;
 		}
 	}
